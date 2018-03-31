@@ -1,0 +1,325 @@
+header #slide{
+	background-image:url("../Image/slider.png");
+		background-size: cover;
+	background-position: center;
+	height: calc(100vh);
+	padding-top: 150px;
+}
+header #slide .text-center{
+
+}
+
+header .progress{
+	height: 70px;
+}
+.search-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+	height:0;
+	left: 27%;
+}
+.search-wrapper.active {}
+header .progress .progress-bar{
+	font-size: 20pt;
+	padding-left: 80px;
+}
+header .progress-bar-animated ul li{
+	font-size: 12pt;
+	padding-top: 15px;
+	
+}
+.justify-content-start li a{
+	color:  #1a54e7 !important ;
+	
+}
+.test
+{
+	padding-bottom: 12px;
+}
+.justify-content-start li a:hover{
+	border-bottom-color: #1a54e7;
+	border: 2px;
+}
+header .progress-bar-animated ul li a{
+color: #b7b7ae;
+}
+
+.test:hover{
+	border-bottom: 3px solid #1a54e7 !important;
+
+}
+.justify-content-between{
+	color: white !important;
+
+}
+#slide .container{
+	padding-top: 160px;
+}
+#slide .text-center{
+	color: white;
+	padding-top: 50px;
+}
+.row{
+	padding-top: 30px;
+
+}
+#main .Main-slide{
+	background-image: url("../Image/sliderMain.png");
+	  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+#main .containerfluid{
+	background-image: url("../Image/sliderMain.png");
+	  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-bottom{
+		background-image: url("../Image/footer.png");
+	  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:20rem;
+	padding-top: 1em;
+	color: white ;
+
+}
+#main-bottom .p-tieude{
+	font-size: 48pt;
+	padding-bottom: 2px;
+}
+#main-bottom p-text{
+font-size: 24pt;
+}
+
+
+@media only screen and (max-width: 320px) {
+ 
+.justify-content-start li a{
+	display: none;
+}
+.progress-bar span{
+	font-size: 10pt;
+	
+}
+#main .card{
+	font-size: 10pt;
+
+}
+
+
+header #slide{
+	background-size:320px 300px;
+	background-repeat: no-repeat;
+}
+}
+
+.search-wrapper .input-holder {    
+    height: 70px;
+    width:70px;
+	
+    background: rgba(255,255,255,0);
+   
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+    width:450px;
+    border-radius: 50px;
+
+    background: rgba(0,0,0,0.5);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+.search-wrapper .input-holder .search-input {
+    width:80%;
+    height: 50px;
+   	margin-left: 4em;
+    opacity: 0;
+    position: absolute;
+	padding-left: 100px;
+    background: transparent;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    font-family:"Open Sans", Arial, Verdana;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color:#000000;
+    transform: translate(0, 60px);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    transform: translate(0, 10px);
+}
+.search-wrapper .input-holder .search-icon {
+    width:70px;
+    height:70px;
+    border: none;
+   padding-left: 100px;
+    background: #f6f6f6;
+    padding:0px;
+    outline:none;
+    position: relative;
+    z-index: 2;
+    float:left ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icon {
+    width: 50px;
+    height:50px;
+    margin: 10px;
+
+    border-radius: 30px;
+}
+.search-wrapper .input-holder .search-icon span {
+    width:22px;
+    height:22px;
+
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    transform: rotate(45deg);
+    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+}
+.search-wrapper.active .input-holder .search-icon span {
+    transform: rotate(-45deg);
+}
+.search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+    position: absolute; 
+    content:'';
+}
+.search-wrapper .input-holder .search-icon span::before {
+    width: 3px;
+    height: 15px;
+    left: 5px;
+    top: 14px;
+
+    border-radius:1px;
+    background: #603b3b;
+}
+.search-wrapper .input-holder .search-icon span::after {
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+
+    border-radius: 16px;
+    border: 1px solid #b1b1b1;
+}
+.search-wrapper .close {
+    position: absolute;
+    z-index: 1;
+    top:24px;
+    right:20px;
+    width:25px;
+    height:25px;
+
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    transition-delay: 0.2s;
+}
+.search-wrapper.active .close {
+    right:-50px;
+    transform: rotate(45deg);
+    transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.5s;
+
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+    position:absolute;
+    content:'';
+    background: #FE5F55;
+    border-radius: 2px;
+
+}
+.search-wrapper .close::before {
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 0px;
+
+}
+.search-wrapper .close::after {
+    width: 25px;
+    height: 5px;
+    left: 0px;
+    top: 10px;
+
+}
+ 
+
+ 
+  #main .card-img-overlay{
+	padding-top: 10em;
+  }
+
+  #main span{
+  	background-color: #d90445;
+  	float: left;
+  	width: 4em;
+  	text-align: center;
+	height: 2em;
+	padding-top: 5px;
+	margin-top: 30px;
+  }
+  #main .p-main
+  {
+  	float: right;
+  	font-size: 15pt;
+  	padding-top: 2em;
+  }
+  #main .card
+  {
+		margin: 15px 0;
+  }
+  #main .card #p-nature{
+  	margin-top: -3em;
+  	background-color: #58b600;
+  }
+  #main .card #p-people{
+  	margin-top: -3em;
+  	background-color: #1a54e7;
+  }
+  #main .card #p-trips{
+  	margin-top: -3em;
+  	background-color: #d90445;
+  }
+  #main .card #p-tech{
+  	margin-top: -3em;
+  	background-color: #000000;
+  }
+   #main .card #p-fashion{
+  	margin-top: -3em;
+  	background-color: #8200b2;
+  }
+
+
+.input-group-text{
+    position: absolute;
+    right: 0;
+    padding:5px 15px;
+   border-radius: 20px !important;
+}
+.input-group-append{
+    border-radius: 20px;
+}
+.letter-input{
+    border-radius: 20px !important;
+    background-color: #2c6cff !important;
+    border: none;
+
+}
+
+.letter-Donec{
+    color:#8baeff;
+}
+
+
