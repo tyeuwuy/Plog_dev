@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head >
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+			<link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="../owlcarousel/owl.theme.default.min.css">
+</head>
+<body>
+	<div class="box-1 background-grey-light pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="owl-carousel owl-carousel-2">
+                            <div class="item">
+                                <div class="card">
+                                    <img src="Image/main1.png" alt="Home">
+                                    <span class="box-1-tag tags-div1 background-red tags">Trips</span>
+                                     <div class="card-body">
+                                          <p class="card-text">Donec elementum dui semper, prvetium dui quis, pretium nisl. Nunc quis ornare odio.</p>
+                                    </div>
+                                    <div class="card-footer border-0">
+                                          <small class="text-muted"><span class="color-grey">11 septemvber 2016 |</span> <a href="#">John Doe</a> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="Image/main2.png" alt="Home">
+                                      <span class="box-1-tag tags-div1 background-green tags">Nature</span>
+                                     <div class="card-body">
+                                          <p class="card-text">Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.</p>
+                                    </div>
+                                    <div class="card-footer border-0">
+                                          <small class="text-muted"><span class="color-grey">11 septemvber 2016 |</span> <a href="#">John Doe</a> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="Image/main3.png" alt="home">
+                                     <span class="box-1-tag tags-div background-green tags">Nature</span>
+                                     <div class="card-body">
+                                          <p class="card-text">Donec elementum dui semper, prvetium dui quis, pretium nisl. Nunc quis ornare odio.</p>
+                                    </div>
+                                    <div class="card-footer border-0">
+                                          <small class="text-muted"><span class="color-grey">11 septemvber 2016 |</span> <a href="#">John Doe</a> </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="jquery.min.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script type="text/javascript">
+					$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:true,
+				responsive:{
+				0:{
+				items:1
+				},
+				600:{
+				items:3
+				},
+				1000:{
+				items:5
+				}
+				}
+				})
+		</script>
+</body>
+</html>

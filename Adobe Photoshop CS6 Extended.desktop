@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Adobe Photoshop CS6 Extended
+Exec=env WINEPREFIX="/home/tuananh257it/.wine" wine C:\\\\Program\\ Files\\ \\(x86\\)\\\\Adobe\\\\Adobe\\ Photoshop\\ CS6\\\\Photoshop.exe 
+Type=Application
+StartupNotify=true
+Path=/home/tuananh257it/.wine/dosdevices/c:/Program Files (x86)/Adobe/Adobe Photoshop CS6/
+Icon=E219_Photoshop.0
